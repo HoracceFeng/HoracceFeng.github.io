@@ -1,6 +1,6 @@
 # Site settings
-title: 藏  # 博客名字
-header-img: "img/green.jpg"
+title: 取栗藏  # 博客名字
+header-img: "img/background.png"
 tagline: "cn"  
 description: "技术，产品，经济，政治，观点，新思路"  # 一句话描述你的博客
 baseurl: ""
@@ -15,12 +15,12 @@ owner:
 
 
 # Data
-gavatar: img/favicon.png # 浏览器地址栏小图标，可自定义更改
-favicon: img/favicon.png # 浏览器地址栏小图标，可自定义更改
+gavatar: img/flames.png # 浏览器地址栏小图标，可自定义更改
+favicon: img/flames.png # 浏览器地址栏小图标，可自定义更改
 
 github_username: HoracceFeng
-zhihu_username: 
-CSDN_username: 
+zhihu_username: 取栗
+CSDN_username: HoracceFeng
 douban_username:  
 twitter_username: 
 facebook_username: 
@@ -34,7 +34,7 @@ markdown: kramdown
 highlighter: rouge
 permalink: pretty
 paginate: 8
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","ArticleHub"]
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone: Asia/Shanghai
@@ -47,7 +47,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      author: "你的名字" # 你的名字
+      author: "小木君" # 你的名字
       header-img: "img/green.jpg" # We don't want posts without a header image, that whould mean white on white
 
 # Comments 
