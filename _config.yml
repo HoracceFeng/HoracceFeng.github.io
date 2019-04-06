@@ -1,27 +1,31 @@
 # Site settings
-title: 博客名字 # 你的博客名字，可以定义修订
+title: 藏  # 博客名字
 header-img: "img/green.jpg"
 tagline: "cn"  
-description: "这是我的博客"  # 一句话描述你的博客
+description: "技术，产品，经济，政治，观点，新思路"  # 一句话描述你的博客
 baseurl: ""
-url: "http://cnfeat"  # 此处填写你的博客地址 
+url: "http://horaccefeng.com"  # 此处填写你的博客地址 
+
 
 # About/contact
 owner: 
-  name: "作者名字" # 填写作者信息：名字
-  email: X@gmail.com # 填写作者信息：邮箱
-  bio: "你的博客描述" # 填写作者信息：博客描述
+  name: "小木君" # 填写作者信息：名字
+  email: yenitsed3@gmail.com # 填写作者信息：邮箱
+  bio: "不分对错，不论立场，只求观点" # 填写作者信息：博客描述
+
 
 # Data
 gavatar: img/favicon.png # 浏览器地址栏小图标，可自定义更改
 favicon: img/favicon.png # 浏览器地址栏小图标，可自定义更改
 
-douban_username:  # 你的豆瓣id
+github_username: HoracceFeng
+zhihu_username: 
+CSDN_username: 
+douban_username:  
 twitter_username: 
-github_username: 
 facebook_username: 
 weibo_username: 
-zhihu_username: 
+
 
 # Build settings  
 # use Github Flavored Markdown !important  
