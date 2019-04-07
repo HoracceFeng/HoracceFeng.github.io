@@ -7,7 +7,7 @@ tags: [tensorflow, backbones, API]
 description: tensorflow backbones 细节
 ---
 
-@[TOC](tensorflow复现 backbones时的一些细节)
+# Tensorflow复现Backbones时的一些细节
 
 最近工作需要做一些图像识别的项目，在github上浏览了好些tensorflow的经典算法复现，如ResNet, VGG, SEnet等，由于每位大大的代码风格不一，对TF的API使用又各有不同，实在不太好做对照实验，再者很多大佬的代码普遍由于要抢fork抢star，想要尽早复现（我猜的），普遍存在下面这些问题：
 
