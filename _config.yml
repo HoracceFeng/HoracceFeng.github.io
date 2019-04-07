@@ -15,12 +15,12 @@ owner:
 
 
 # Data
-gavatar: img/flames.png # 浏览器地址栏小图标，可自定义更改
-favicon: img/flames.png # 浏览器地址栏小图标，可自定义更改
+gavatar: img/favicon.ico # 浏览器地址栏小图标，可自定义更改
+favicon: img/favicon.ico # 浏览器地址栏小图标，可自定义更改
 
 github_username: HoracceFeng
 zhihu_username: feng-xiao-mu-24
-CSDN_username: HoracceFeng
+CSDN_username: u014469896
 douban_username:  
 twitter_username: 
 facebook_username: 
