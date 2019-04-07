@@ -2,7 +2,7 @@
 layout: page
 title: "milestone"
 description: "选文集"
-header-img: "img/zhihu.jpg"
+header-img: "img/plates.jpg"
 ---
 
 ## 本月选文

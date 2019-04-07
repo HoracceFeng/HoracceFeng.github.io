@@ -2,7 +2,7 @@
 layout: page
 title: "Archive"
 description: "藏书楼"
-header-img: "img/background.jpg"
+header-img: "img/stars.jpg"
 ---
 
 
