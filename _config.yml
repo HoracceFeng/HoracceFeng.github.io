@@ -33,7 +33,7 @@ weibo_username:
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
-paginate: 8
+paginate: 8    ## display number of blog posts
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","ArticleHub"]
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
@@ -43,7 +43,7 @@ timezone: Asia/Shanghai
 defaults:
   -
     scope: 
-      path: ""
+      path: "_posts/"
       type: "posts"
     values:
       layout: "post"
