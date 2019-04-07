@@ -30,7 +30,8 @@ weibo_username:
 # Build settings  
 # use Github Flavored Markdown !important  
 # document: http://jekyllrb.com/docs/configuration/#kramdown  
-markdown: kramdown
+# markdown: kramdown
+markdown: PageDown
 highlighter: rouge
 permalink: pretty
 paginate: 8    ## display number of blog posts

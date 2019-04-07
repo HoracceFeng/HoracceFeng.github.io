@@ -1,6 +1,6 @@
 ---
 layout: post
-title: tensorflow复现 backbones时的一些细节
+title: Tensorflow 复现 Backbones 时的一些细节
 date: 2019-04-06
 categories: techcode
 tags: [tensorflow, backbones, API]
