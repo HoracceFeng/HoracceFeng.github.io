@@ -81,7 +81,7 @@ with tf.variable_scope(‘’, reuse=True):
 tf.nn.batch_normalize(x, mean, variance, offset, scale, variance_epsilon, name=None)
 ```
 从底层实现能够比较容易看到 batch_normalize 层的全貌，输入为x，对输入的 tensor 进行归一处理涉及到4个参数的学习，分别是 mean, variance, offset, scale。套用官方文档中公式更清晰，
-![图二](img/2019-04-01/graph2.jpg)
+![图二](../img/2019-04-01/graph2.jpg)
 至于其他两个api与这个的区别，无非是四个参数的初始化方法和decay数值，一般直接使用原来的设置就可以了。值得注意的是，部分decay的默认值是0.99，但是0.99容易造成过拟合（？），一般会更改为0.9。另外一个会使用到的选项是 training 和 reuse，
 ```
 tf.layers.batch_normalization(.., trainable, training, reuse, name)
@@ -90,7 +90,7 @@ tf.contrib.layers.batch_norm(.., is_training, reuse, scope)
 tf.layers.batch_normalization 中的trainable决定该参数是否可训练，通过关闭该参数可以锁死BN层的参数不更新。training参数则是一个允许使用者选择模型运行过程中是否更新BN参数的选项，实际使用时在 traning_epoch 我们会打开，在 testing_epoch 则需要关闭，避免BN层在验证测试过程中继续学习。reuse参数的使用范围很广，在本例中主要是用于实现多GPU训练，下面会再详细讲解。
 tf.contrib.layers.batch_norm 中，is_training 和 上面的training参数使用方法相同，scope 则对应 name 参数。
 最后再附上 stackoverflow 上大神对于各API功能的整理：
-![图三](img/2019-04-01/graph3.jpg)
+![图三](../img/2019-04-01/graph3.jpg)
      
 
 ## 3. name_scope 与 variable_scope
@@ -99,7 +99,7 @@ name_scope 和 variable_scope 的最大区别是，后者是专门为了解决�
 
 ## 4. 分类模型的损失函数设置
 这里我只介绍 sigmoid 和 softmax 两种常用的激活函数和他们对应的损失函数计算API（一般使用交叉墒）:
-![图四](img/2019-04-01/graph4.jpg)
+![图四](../img/2019-04-01/graph4.jpg)
 
 - tf.nn.softmax_cross_entropy_with_logits:
        这是一般分类器中最常用的损失函数计算，主要用在==单标签多分类==问题中。在tf1.5及以下的版本中，这个api只是单纯计算损失函数，不会更新softmax到cross_entropy间的一些参数设置，在tf1.5以上的版本，则统一更新成会自动更新内部参数的形式
