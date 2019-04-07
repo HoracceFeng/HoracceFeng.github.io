@@ -1,6 +1,6 @@
 # Site settings
 title: 取栗藏  # 博客名字
-header-img: "img/background.jpg"
+header-img: "img/sakura.jpg"
 tagline: "cn"  
 description: "技术，产品，经济，政治，观点，新思路"  # 一句话描述你的博客
 baseurl: "http://horaccefeng.com"
@@ -43,7 +43,7 @@ timezone: Asia/Shanghai
 defaults:
   -
     scope: 
-      path: "_posts/"
+      path: ""
       type: "posts"
     values:
       layout: "post"
@@ -54,12 +54,12 @@ defaults:
 comments :
   provider : disqus # 使用 disqus 评论模块，读者翻墙才能看见
   duoshuo :
-    short_name :  # 填写你的 disqus id
+    short_name : HoracceFeng # 填写你的 disqus id
   disqus :
-      short_name :  # 填写你的 disqus id
+      short_name : HoracceFeng # 填写你的 disqus id
 
 # Analytics and webmaster tools stuff goes here
-google_analytics:  # 填写你  google_analytics id
+google_analytics: UA-137859383-1 # 填写你  google_analytics id
 google_verify:
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:
