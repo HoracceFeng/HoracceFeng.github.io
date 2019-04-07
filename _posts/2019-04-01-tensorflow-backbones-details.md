@@ -24,7 +24,7 @@ https://github.com/HoracceFeng/Image-Recognize-Tensorflow/tree/master [^0]
 图源是“机器之心”的这篇文章[^1]
 同时感谢数据来源[^2]
 
-![图一](img/2019-04-01/graph1.jpg)
+![图一](../img/2019-04-01/graph1.jpg)
 其实keras可以吐槽的东西确实很多，虽然它很方便，但是对比tensorflow和pytorch，它至少有以下问题：
 1. 不方便做更进一步细小的改进
 2. 训练速度慢，实例使用时间（inference time）速度也是慢
@@ -159,17 +159,17 @@ sudo docker run -it —rm -p 24000:6006 docker_image_name bash
 &nbsp;
 &nbsp;
 ## Reference 
-[0]: 厚颜无耻求关注 (这周我会写完ResNet Backbone的 T_T)  https://github.com/HoracceFeng/Image-Recognize-Tensorflow/tree/master
+[0]: 厚颜无耻求关注 (这周我会写完ResNet Backbone的 T_T)  <https://github.com/HoracceFeng/Image-Recognize-Tensorflow/tree/master>
 
-[^1]: keras 与 pytorch 的34个模型复现对比 https://mp.weixin.qq.com/s/UTkjFSha2nfnmC-cwZjSKg
+[^1]: keras 与 pytorch 的34个模型复现对比 <https://mp.weixin.qq.com/s/UTkjFSha2nfnmC-cwZjSKg>
 
-[^2]: 不同框架下的速度测试 https://github.com/ilkarman/DeepLearningFrameworks
+[^2]: 不同框架下的速度测试 <https://github.com/ilkarman/DeepLearningFrameworks>
 
-[^3]: tensorflow 吐槽小短文 https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650758563&idx=4&sn=5fb7f9bf8cb07329ee70bd2bfc1e3e58&chksm=871a99ddb06d10cb4e2110d94efd3150ec09e06b455a8dde99e28be7fcb7b36caf42487d54ec&mpshare=1&scene=1&srcid=&pass_ticket=SLZZoHYqWTbSV2PzTtk7g469ebzouLY2%2B664%2BJ%2FqGKE%3D#rd 
+[^3]: tensorflow 吐槽小短文 <https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650758563&idx=4&sn=5fb7f9bf8cb07329ee70bd2bfc1e3e58&chksm=871a99ddb06d10cb4e2110d94efd3150ec09e06b455a8dde99e28be7fcb7b36caf42487d54ec&mpshare=1&scene=1&srcid=&pass_ticket=SLZZoHYqWTbSV2PzTtk7g469ebzouLY2%2B664%2BJ%2FqGKE%3D#rd>
 
-[^4]: name_scope 与 variable_scope 的实例 https://blog.csdn.net/u012609509/article/details/80045529
+[^4]: name_scope 与 variable_scope 的实例 <https://blog.csdn.net/u012609509/article/details/80045529>
 
-[^5]: tf_debug 官方文档 https://www.tensorflow.org/guide/debugger?hl=zh_cn 
+[^5]: tf_debug 官方文档 <https://www.tensorflow.org/guide/debugger?hl=zh_cn>
 
 
 
