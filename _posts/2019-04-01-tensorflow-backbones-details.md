@@ -7,7 +7,7 @@ tags: [tensorflow, backbones, API]
 description: tensorflow backbones 细节
 ---
 
-# Tensorflow复现Backbones时的一些细节
+# Tensorflow 复现 Backbones 时的一些细节
 
 最近工作需要做一些图像识别的项目，在github上浏览了好些tensorflow的经典算法复现，如ResNet, VGG, SEnet等，由于每位大大的代码风格不一，对TF的API使用又各有不同，实在不太好做对照实验，再者很多大佬的代码普遍由于要抢fork抢star，想要尽早复现（我猜的），普遍存在下面这些问题：
 
@@ -25,6 +25,7 @@ https://github.com/HoracceFeng/Image-Recognize-Tensorflow/tree/master [^0]
 同时感谢数据来源[^2]
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190401111114649.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTQ0Njk4OTY=,size_16,color_FFFFFF,t_70)
+![架构对比](img/2019-04-01/graph1.jpg)
 其实keras可以吐槽的东西确实很多，虽然它很方便，但是对比tensorflow和pytorch，它至少有以下问题：
 1. 不方便做更进一步细小的改进
 2. 训练速度慢，实例使用时间（inference time）速度也是慢
@@ -151,19 +152,24 @@ sudo docker run -it —rm -p 24000:6006 docker_image_name bash
 通过这个命令，我们将docker容器内的 tensorboard 端口6006映射到服务器端口24000上，这样我们就可以在连通服务器的任何电脑上使用浏览器浏览这个端口下的tensorboard了。
 
 &nbsp;
-** 预告 **
+## 预告 
 接下来打算更新：
 1. 如何改造代码变成多gpu训练？同时部署多个tensorflow模型？如何在tensorflow中实现freeze backbone操作？以及如何把 github 上其他人的backbone抢过来改一改当作是自己训练的backbone （hehehe…）【图与变量命名的问题】
 2. 激活函数，优化函数，损失函数
 
 &nbsp;
 &nbsp;
-** Reference **
+## Reference 
 [^0]: 厚颜无耻求关注 (这周我会写完ResNet Backbone的 T_T)  https://github.com/HoracceFeng/Image-Recognize-Tensorflow/tree/master
+
 [^1]: keras 与 pytorch 的34个模型复现对比 https://mp.weixin.qq.com/s/UTkjFSha2nfnmC-cwZjSKg
+
 [^2]: 不同框架下的速度测试 https://github.com/ilkarman/DeepLearningFrameworks
+
 [^3]: tensorflow 吐槽小短文 https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650758563&idx=4&sn=5fb7f9bf8cb07329ee70bd2bfc1e3e58&chksm=871a99ddb06d10cb4e2110d94efd3150ec09e06b455a8dde99e28be7fcb7b36caf42487d54ec&mpshare=1&scene=1&srcid=&pass_ticket=SLZZoHYqWTbSV2PzTtk7g469ebzouLY2%2B664%2BJ%2FqGKE%3D#rd 
+
 [^4]: name_scope 与 variable_scope 的实例 https://blog.csdn.net/u012609509/article/details/80045529
+
 [^5]: tf_debug 官方文档 https://www.tensorflow.org/guide/debugger?hl=zh_cn 
 
 

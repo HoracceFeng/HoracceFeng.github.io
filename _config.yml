@@ -30,8 +30,7 @@ weibo_username:
 # Build settings  
 # use Github Flavored Markdown !important  
 # document: http://jekyllrb.com/docs/configuration/#kramdown  
-# markdown: kramdown
-markdown: PageDown
+markdown: kramdown
 highlighter: rouge
 permalink: pretty
 paginate: 8    ## display number of blog posts
@@ -48,7 +47,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      author: "小木君" # 你的名字
+      author: "HoracceFeng" # 你的名字
       header-img: "img/sakura.jpg" # We don't want posts without a header image, that whould mean white on white
 
 # Comments 
