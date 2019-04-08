@@ -11,7 +11,7 @@ header-img: "img/bkstone.jpg"
     <!-- <a href="#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a> -->
     <a href="#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">
         <span class="fa fa-tag listing-seperator" id="{{ tag[0] }}">
-            <span class="tag-text">{{ tag[0] }}</span>
+            <span class="tag-text">{{ tag[0]  &nbsp; }}</span>
         </span>
     </a>
     {% endfor %}
