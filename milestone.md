@@ -11,6 +11,7 @@ header-img: "img/plates.jpg"
 &nbsp;
 ## 技术原创
 
+- Tensorflow 复现 Backbones 时的一些细节: <http://www.horaccefeng.com/techcode/2019/04/06/tensorflow-backbones-details/>
 
 &nbsp;
 ## Reference
