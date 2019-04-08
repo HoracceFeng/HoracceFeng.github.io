@@ -30,20 +30,7 @@ header-img: "img/bkstone.jpg"
         <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
         <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
         </li>
-<!--     <div class="post-preview">
-        <a href="{{ post.url | prepend: site.baseurl }}">
-            <h3 class="post-title">
-                {{ post.title }}
-            </h3>
-            {% if post.subtitle %}
-            <h4 class="post-subtitle">
-                {{ post.subtitle }}
-            </h4>
-            {% endif %}
-        </a>
-        <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p>
-    </div> -->
-<!--     <hr> -->
+        <br>
     {% endfor %}
 </div>
 {% endfor %}
