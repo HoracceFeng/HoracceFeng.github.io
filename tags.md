@@ -5,6 +5,7 @@ description: "Keywords"
 header-img: "img/bkstone.jpg"  
 ---
 
+## Tags List
 <div id='tag_cloud' class="tags">
     {% for tag in site.tags %}
     <!-- <a href="#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a> -->
@@ -16,6 +17,8 @@ header-img: "img/bkstone.jpg"
     {% endfor %}
 </div>
 
+&nbsp;
+## Whole List
 <!-- 标签列表 -->
 {% for tag in site.tags %}
 <div class="one-tag-list">
@@ -40,9 +43,8 @@ header-img: "img/bkstone.jpg"
         </a>
         <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p>
     </div> -->
-    <hr>
+<!--     <hr> -->
     {% endfor %}
-    &nbsp;
 </div>
 {% endfor %}
 
