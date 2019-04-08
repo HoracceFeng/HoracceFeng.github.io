@@ -40,7 +40,8 @@ layout: default
 
                 {{ content }}
 
-                <hr>
+                <!-- <hr> -->
+                <pr>
 
                 <ul class="pager">
                     {% if page.previous.url %}
@@ -73,18 +74,24 @@ layout: default
                     data-images="{{ site.url }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}"
                     data-content="{{ content | strip_html | truncate:80 }} | Microdust:Azeril's blog"
                     data-url="{{site.url}}{{page.url}}">
-                    <div class="ds-share-inline">
-                      <ul  class="ds-share-icons-16">
-
-                        <li data-toggle="ds-share-icons-more"><a class="ds-more" href="#">分享到：</a></li>
-                        <li><a class="ds-wechat flat" href="javascript:void(0);" data-service="wechat">微信</a></li>
-                        <li><a class="ds-weibo flat" href="javascript:void(0);" data-service="weibo">微博</a></li>
-                        <li><a class="ds-douban flat" href="javascript:void(0);" data-service="douban">豆瓣</a></li>
-                      </ul>
-                      <div class="ds-share-icons-more">
-                      </div>
+                    <!-- AddToAny BEGIN -->
+                    <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+                    <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+                    <a class="a2a_button_wechat"></a>
+                    <a class="a2a_button_sina_weibo"></a>
+                    <a class="a2a_button_evernote"></a>
+                    <a class="a2a_button_douban"></a>
+                    <a class="a2a_button_facebook"></a>
+                    <a class="a2a_button_linkedin"></a>
                     </div>
-                <hr>
+                    <script>
+                    var a2a_config = a2a_config || {};
+                    a2a_config.locale = "zh-CN";
+                    </script>
+                    <script async src="https://static.addtoany.com/menu/page.js"></script>
+                    <!-- AddToAny END -->
+                <!-- <hr> -->
+                <pr>
                 </div>
                 <!-- Duoshuo Share end-->
 
@@ -99,22 +106,7 @@ layout: default
     </div>
 </article>
 
-<!-- AddToAny BEGIN -->
-<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
-<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
-<a class="a2a_button_wechat"></a>
-<a class="a2a_button_sina_weibo"></a>
-<a class="a2a_button_evernote"></a>
-<a class="a2a_button_douban"></a>
-<a class="a2a_button_facebook"></a>
-<a class="a2a_button_linkedin"></a>
-</div>
-<script>
-var a2a_config = a2a_config || {};
-a2a_config.locale = "zh-CN";
-</script>
-<script async src="https://static.addtoany.com/menu/page.js"></script>
-<!-- AddToAny END -->
+
 
 
 
