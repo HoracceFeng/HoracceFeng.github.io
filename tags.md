@@ -7,7 +7,12 @@ header-img: "img/bkstone.jpg"
 
 <div id='tag_cloud' class="tags">
     {% for tag in site.tags %}
-    <a href="#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a>
+    <!-- <a href="#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a> -->
+    <a href="#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">
+        <span class="fa fa-tag listing-seperator" id="{{ tag[0] }}">
+            <span class="tag-text">{{ tag[0] }}</span>
+        </span>
+    </a>
     {% endfor %}
 </div>
 
@@ -22,7 +27,7 @@ header-img: "img/bkstone.jpg"
         <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
         <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
         </li>
-    <div class="post-preview">
+<!--     <div class="post-preview">
         <a href="{{ post.url | prepend: site.baseurl }}">
             <h3 class="post-title">
                 {{ post.title }}
@@ -33,10 +38,11 @@ header-img: "img/bkstone.jpg"
             </h4>
             {% endif %}
         </a>
-        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-    </div>
+        <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p>
+    </div> -->
     <hr>
     {% endfor %}
+    &nbsp;
 </div>
 {% endfor %}
 
