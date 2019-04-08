@@ -3,7 +3,7 @@ layout: post
 title: Tensorflow 复现 Backbones 时的一些细节
 date: 2019-04-06
 categories: techcode
-tags: [tensorflow, backbones, API]
+tags: [Technology, tensorflow, backbones]
 description: tensorflow backbones 细节
 ---
 
