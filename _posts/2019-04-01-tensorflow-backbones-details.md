@@ -24,7 +24,8 @@ https://github.com/HoracceFeng/Image-Recognize-Tensorflow/tree/master [^0]
 图源是“机器之心”的这篇文章[^1]
 同时感谢数据来源[^2]
 
-![图一](../img/2019-04-01/graph1.jpg)
+<!-- ![图一](../img/2019-04-01/graph1.jpg) -->
+![图一]({{ site.baseurl }}/img/2019-04-01/graph1.jpg)
 其实keras可以吐槽的东西确实很多，虽然它很方便，但是对比tensorflow和pytorch，它至少有以下问题：
 1. 不方便做更进一步细小的改进
 2. 训练速度慢，实例使用时间（inference time）速度也是慢
