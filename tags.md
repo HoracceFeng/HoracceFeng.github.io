@@ -18,11 +18,11 @@ header-img: "img/bkstone.jpg"
         <span class="tag-text">{{ tag[0] }}</span>
     </span>
     {% for post in tag[1] %}
-      <li class="listing-item">
-      <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-      <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-      </li>
-     <div class="post-preview">
+        <li class="listing-item">
+        <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+        </li>
+    <div class="post-preview">
         <a href="{{ post.url | prepend: site.baseurl }}">
             <h3 class="post-title">
                 {{ post.title }}
@@ -33,7 +33,7 @@ header-img: "img/bkstone.jpg"
             </h4>
             {% endif %}
         </a>
-        <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p>
+        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
     </div>
     <hr>
     {% endfor %}
