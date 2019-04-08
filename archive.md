@@ -11,7 +11,6 @@ header-img: "img/stars.jpg"
     {% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
     {% if year != y %}
         {% assign year = y %}
-        <!-- <li class="listing-seperator">{{ y }}</li> -->
         <h3>{{ y }}</h3>
     {% endif %}
     <ul class="listing">
