@@ -19,9 +19,9 @@ header-img: "img/bkstone.jpg"
 </header> -->
 
 <!-- Main Content -->
-<div class="container">
+<!-- <div class="container">
 	<div class="row">
-		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"> -->
 			<!-- {{content}} -->
             <!-- 标签云 -->
 			<div id='tag_cloud' class="tags">
@@ -59,6 +59,6 @@ header-img: "img/bkstone.jpg"
 			</div>
 			{% endfor %}
 
-		</div>
+<!-- 		</div>
 	</div>
-</div>
+</div> -->
