@@ -19,7 +19,6 @@ description: tensorflow backbones 细节
 https://github.com/HoracceFeng/Image-Recognize-Tensorflow/tree/master [^0]
 欢迎大家来指正，赐star赐fork当然更好啦。如果大家有什么经典模型想要看我复现一次的话，十分欢迎以下留言或者issue给我。tensorflow版本完成后会开始pytorch版本，万分感谢。
 
-&nbsp;
 
 先说一下为什么用tensorflow. 其实我想过用keras，主要是因为以下这张图让我改变主意了：
 图源是“机器之心”的这篇文章[^1]
@@ -33,7 +32,6 @@ https://github.com/HoracceFeng/Image-Recognize-Tensorflow/tree/master [^0]
 4. gpu吐槽2: 多gpu训练直接保存居然，居然，居然直接就把多gpu的图保存下来了，再运行不给同样的gpu还不行了（这个问题有解决方法，敬请留意后续更新）
 5. 还有一个不负责任的观察，keras版本的模型准确率相对低一些。对比pytoch下的backbone实现，只有Inception-series的是keras略胜，其他的都比不过pytorch。而我实现的eras-tiny-yolo3（同样在我GitHub上能找到）的准确率也比darknet原版掉了5%
 
-&nbsp;
 
 进入正题，
 首先说说 layers, nn, contrib 这三个库的异同。nn 和 layers 都是官方实现的函数库，contrib则是第三方提交的代码。尽管contrib里实现了很多官方代码中不支持的功能，部分后来也被加入到官方库中，但实际上大部分代码仍然存在代码格式不统一，支持文档不齐全，和由于版本更新带来的不稳定的情况。由于官方最新版的 tensorflow 2.0 已经不支持 contrib 库了，所以目前的代码要支持最新版本的 TF 必须替换 contrib 函数。如果要尽量避免代码更新和维护的工作，tf.nn是最稳定的实现，也是这三个库中最底层。tf.layers则是相对更高级的API，使用这个库实现简单的深度学习模型是新手使用 tensorflow 一个比较好的选择，正如上面的例子所示，tf.layers的实现相对tf.nn可以节省很多代码。
@@ -60,7 +58,6 @@ tf.nn.conv2d(input, filter, strides, padding, use_cudnn_on_gpu=None, data_format
            - layers.conv2d已经将reuse,training参数暴露出来，方便逐层控制训练，多gpu训练，特定层权值共享等骚操作；而使用tf.nn.conv2d需要自己暴露reuse和training
            - tf.nn.conv2d相对更灵活，因为它的strides设置允许使用者在 batch 和 channel 部分执行
 
-&nbsp;
 
 下面分别使用两个函数实现同样的功能：
 ```
@@ -153,14 +150,12 @@ sudo docker run -it —rm -p 24000:6006 docker_image_name bash
 ```
 通过这个命令，我们将docker容器内的 tensorboard 端口6006映射到服务器端口24000上，这样我们就可以在连通服务器的任何电脑上使用浏览器浏览这个端口下的tensorboard了。
 
-&nbsp;
 
 ## 预告 
 接下来打算更新：
 1. 如何改造代码变成多gpu训练？同时部署多个tensorflow模型？如何在tensorflow中实现freeze backbone操作？以及如何把 github 上其他人的backbone抢过来改一改当作是自己训练的backbone （hehehe…）【图与变量命名的问题】
 2. 激活函数，优化函数，损失函数
 
-&nbsp;
 
 ## Reference 
 [^0]: 厚颜无耻求关注 (这周我会写完ResNet Backbone的 T_T)  <https://github.com/HoracceFeng/Image-Recognize-Tensorflow/tree/master>
