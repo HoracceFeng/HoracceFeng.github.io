@@ -157,7 +157,6 @@ sudo docker run -it —rm -p 24000:6006 docker_image_name bash
 2. 激活函数，优化函数，损失函数
 
 &nbsp;
-&nbsp;
 ## Reference 
 [0]: 厚颜无耻求关注 (这周我会写完ResNet Backbone的 T_T)  <https://github.com/HoracceFeng/Image-Recognize-Tensorflow/tree/master>
 
