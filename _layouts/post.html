@@ -100,10 +100,22 @@ layout: default
                 </div>
                 <!-- 多说评论框 end -->
 
+                <hr class="hidden-sm hidden-xs">
+                <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                <div class="tags">
+                    {% for tag in site.tags %}
+                        {% if tag[1].size > {{site.featured-condition-size}} %}
+                            <a href="/tags/#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">
+                                {{ tag[0] }}
+                            </a>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+
 
                 <!-- Featured Tags -->
                 <!-- {% if site.featured-tags %} -->
-                <section>
+<!--                 <section>
                     <hr class="hidden-sm hidden-xs">
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
@@ -115,7 +127,7 @@ layout: default
                             {% endif %}
                         {% endfor %}
                     </div>
-                </section>
+                </section> -->
                 <!-- {% endif %} -->
 
             </div>
