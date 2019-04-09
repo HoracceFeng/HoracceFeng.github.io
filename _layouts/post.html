@@ -100,28 +100,9 @@ layout: default
                 </div>
                 <!-- 多说评论框 end -->
 
-                <!-- PREVIOUS / NEXT PAGE -->
-                <ul class="pager">
-                    {% if page.previous.url %}
-                    <li class="previous">
-                        <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">
-                        Previous<br>
-                        <span>{{page.previous.title}}</span>
-                        </a>
-                    </li>
-                    {% endif %}
-                    {% if page.next.url %}
-                    <li class="next">
-                        <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">
-                        Next<br>
-                        <span>{{page.next.title}}</span>
-                        </a>
-                    </li>
-                    {% endif %}
-                </ul>
 
                 <!-- Featured Tags -->
-                {% if site.featured-tags %}
+                <!-- {% if site.featured-tags %} -->
                 <section>
                     <hr class="hidden-sm hidden-xs">
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
@@ -135,8 +116,8 @@ layout: default
                         {% endfor %}
                     </div>
                 </section>
-                {% endif %}
-                
+                <!-- {% endif %} -->
+
             </div>
         </div>
     </div>
