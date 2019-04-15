@@ -5,8 +5,7 @@ tagline: "cn"
 description: "技术，产品，经济，政治，观点，新思路"  # 一句话描述你的博客
 baseurl: "http://horaccefeng.com"
 url: "http://horaccefeng.com"  # 此处填写你的博客地址 
-general-tag: "TECH"
-featured-condition-size: 1
+
 
 # About/contact
 owner: 
