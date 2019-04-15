@@ -5,13 +5,15 @@ description: "选文集"
 header-img: "img/plates.jpg"
 ---
 
-## 本月选文
-
-
-&nbsp;
 ## 技术原创
 
 - Tensorflow 复现 Backbones 时的一些细节: <http://www.horaccefeng.com/techcode/2019/04/06/tensorflow-backbones-details/>
+
+
+&nbsp;
+## 本月选文
+- 张小龙 -- 万物之中，希望至美: <>
+- 十种确保搞砸人工智能项目的方法: <>
 
 
 &nbsp;
