@@ -12,8 +12,9 @@ header-img: "img/plates.jpg"
 
 &nbsp;
 ## 本月选文
-- 张小龙 -- 万物之中，希望至美: <>
-- 十种确保搞砸人工智能项目的方法: <>
+
+- 张小龙 -- 万物之中，希望至美: <http://www.horaccefeng.com/product-analysis/2019/04/15/wechat-2019-XiaoLong_Zhang/>
+- 十种确保搞砸人工智能项目的方法: <http://www.horaccefeng.com/product-analysis/2019/04/15/AI-PM-fail-experience/>
 
 
 &nbsp;
