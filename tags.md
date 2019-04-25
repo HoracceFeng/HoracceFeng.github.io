@@ -32,7 +32,7 @@ header-img: "img/bkstone.jpg"
         </li>
     {% endfor %}
 </div>
-<br>
+<pr>
 {% endfor %}
 
 
