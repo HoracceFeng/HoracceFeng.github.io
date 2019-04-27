@@ -21,7 +21,7 @@ header-img: "img/plates.jpg"
 - 淘宝拼多多网易，刚摸到工厂的门: <http://www.horaccefeng.com/business/2019/04/25/TBPDD-and-factories/>
 - AI死亡启示录: <http://www.horaccefeng.com/product/2019/04/25/fail-AI-Product/>
 - 互联网金融闹剧结束了: <http://www.horaccefeng.com/product/2019/04/27/P2P-Fail-Exp/>
-
+- 拆解万亿"产业互联网": <http://www.horaccefeng.com/product/2019/04/27/ToB-Internet-Bussiness/>
 
 
 &nbsp;
