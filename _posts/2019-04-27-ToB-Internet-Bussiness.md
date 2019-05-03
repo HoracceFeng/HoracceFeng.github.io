@@ -2,7 +2,7 @@
 layout: post
 title: 拆解万亿"产业互联网"
 date: 2019-04-27
-categories: product, Business
+categories: Bussiness
 tags: [Product, Bussiness-Insight]
 description: 互联网产品, 商业视角
 ---
