@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 拆解万亿"产业互联网"
+title: 拆解万亿产业互联网
 date: 2019-04-27
 categories: Bussiness
 tags: [Product, Bussiness-Insight]
