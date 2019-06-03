@@ -9,20 +9,16 @@ description: Scene-Text-Detector-Overview
 
 最近开始进行文本检测器的算法探索，以下是这些天总结的一些内容，我的想法是提供给大家一个入门时快速浏览、理解和记忆主流文本检测器设计思路的框架，希望能作为入门导读的一个材料供大家使用。由于一开始的目的是看 Pixel-anchor，所以其他算法的设计图没有附上，以后有机会再一一补充吧。本文持续更新，也希望各位赐教。
 
-&nbsp;
 
 # Overview
 
 **Thoughts from**  
-
 [pixel_anchor详细介绍](https://zhuanlan.zhihu.com/p/51977978)
 
 **Reference Source**  
 [OCR技术简介](https://zhuanlan.zhihu.com/p/45376274)
-
 [深度学习 OCR Overview ](http://xiaofengshi.com/2019/01/05/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0-OCR_Overview/)
 
-&nbsp;
 
 **SOTA：（2019.05.27）** 
 
@@ -33,7 +29,6 @@ description: Scene-Text-Detector-Overview
 
 在只考虑 precision, recall, Fscore 的情况下，FOTS 的准确度最高，PSEnet的召回性能更好，Pixel-Anchor的较均衡
 
-&nbsp;
 
 **文本检测四类错误**
 
