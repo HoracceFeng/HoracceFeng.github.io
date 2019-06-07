@@ -1,5 +1,6 @@
 ---
 layout: post
+comments : true
 title: 文本检测器论文入门导读 --- Scene Text Detector Overview
 date: 2019-06-04
 categories: techcode
