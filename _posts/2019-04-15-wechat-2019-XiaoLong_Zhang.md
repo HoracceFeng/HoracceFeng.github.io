@@ -1,5 +1,6 @@
 ---
 layout: post
+comments : true
 title: 张小龙 -- 万物之中，希望至美
 date: 2019-04-15
 categories: product-analysis

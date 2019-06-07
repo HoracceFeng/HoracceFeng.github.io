@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: 美股和原油准备好了迎接经济下滑么
 date: 2019-05-26
 categories: Business

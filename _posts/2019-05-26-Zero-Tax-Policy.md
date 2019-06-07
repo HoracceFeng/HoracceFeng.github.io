@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: 黄奇帆讲中国零关税
 date: 2019-05-26
 categories: Policy

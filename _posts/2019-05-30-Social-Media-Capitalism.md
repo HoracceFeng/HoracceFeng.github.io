@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: 地位即服务——重新审视社交网络
 date: 2019-05-30
 categories: Business

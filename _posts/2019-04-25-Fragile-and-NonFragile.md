@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: 脆弱的与反脆弱的
 date: 2019-04-25
 categories: Stock

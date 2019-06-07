@@ -1,5 +1,6 @@
 ---
 layout: post
+comments : true
 title: 十种确保搞砸人工智能项目的方法
 date: 2019-04-15
 categories: product-analysis

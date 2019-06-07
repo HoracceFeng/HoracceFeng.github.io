@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: AI死亡启示录
 date: 2019-04-25
 categories: product

@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: 拆解万亿产业互联网
 date: 2019-04-27
 categories: Bussiness

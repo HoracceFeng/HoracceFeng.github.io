@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: 淘宝拼多多网易，刚摸到工厂的门
 date: 2019-04-25
 categories: Business

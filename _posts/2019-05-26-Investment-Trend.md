@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: 2019 消费趋势与投资机会
 date: 2019-05-26
 categories: Business

@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: AI 行业发展趋势和人才需求预测
 date: 2019-04-27
 categories: Business

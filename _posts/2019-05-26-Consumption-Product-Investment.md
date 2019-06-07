@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: 全球消费品巨头的死亡预言
 date: 2019-05-26
 categories: Business
