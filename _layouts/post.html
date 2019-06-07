@@ -59,65 +59,10 @@ layout: default
                     {% endif %}
                 </ul>
 
-                <!-- Duoshuo Share start -->
-                <style>
-                    .ds-share{
-                        text-align: right;
-                    }
-                    
-                    @media only screen and (max-width: 700px) {
-                        .ds-share {
-
-                        }
-                    }
-                </style>
-
-                <div class="ds-share"
-                    data-thread-key="{{page.id}}" data-title="{{page.title}}"
-                    data-images="{{ site.url }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}"
-                    data-content="{{ content | strip_html | truncate:80 }} | Microdust:Haonan's blog"
-                    data-url="{{site.url}}{{page.url}}">
-                    <!-- AddToAny BEGIN -->
-                    <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
-                    <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
-                    <a class="a2a_button_wechat"></a>
-                    <a class="a2a_button_sina_weibo"></a>
-                    <a class="a2a_button_evernote"></a>
-                    <a class="a2a_button_douban"></a>
-                    <a class="a2a_button_facebook"></a>
-                    <a class="a2a_button_linkedin"></a>
-                    </div>
-                    <script>
-                    var a2a_config = a2a_config || {};
-                    a2a_config.locale = "zh-CN";
-                    </script>
-                    <script async src="https://static.addtoany.com/menu/page.js"></script>
-                    <!-- AddToAny END -->
-                <!-- <hr> -->
-                <pr>
-                </div>
-                <!-- Duoshuo Share end-->
-
-
-                <!-- 多说评论框 start -->
-                <div class="comment">
-                    <div class="ds-thread" data-thread-key="{{page.id}}" data-title="{{page.title}}" data-url="{{site.url}}{{page.url}}"></div>
-                </div>
-                <!-- 多说评论框 end -->
-
-                <!-- Featured Tags -->
-                <hr class="hidden-sm hidden-xs">
-                <h5><a href="/tags/">FEATURED TAGS</a></h5>
-                <div class="tags">
-                    {% for tag in page.tags %}
-                    <a class="tag" href="{{ site.baseurl }}/tags/#{{ tag }}" title="{{ tag }}">
-                        <span class="fa fa-tag listing-seperator" id="{{ tag }}">
-                            <span class="tag-text">{{ tag  &nbsp; }}</span>
-                        </span>
-                    </a>
-                    {% endfor %}
-                </div>
-
+                {% if page.comments %}
+                    {% include disqus.html %}
+                {% endif %}
+                
             </div>
         </div>
     </div>
@@ -125,31 +70,6 @@ layout: default
 
 
 
-<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-<script type="text/javascript">
-var duoshuoQuery = {short_name:"cnfeat"};
-    (function() {
-        var ds = document.createElement('script');
-        ds.type = 'text/javascript';ds.async = true;
-        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-        ds.charset = 'UTF-8';
-        (document.getElementsByTagName('head')[0]
-         || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-</script>
-<!-- 多说公共JS代码 end -->
-
-<!-- async load function -->
-<script>
-    function async(u, c) {
-      var d = document, t = 'script',
-          o = d.createElement(t),
-          s = d.getElementsByTagName(t)[0];
-      o.src = u;
-      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
-      s.parentNode.insertBefore(o, s);
-    }
-</script>
 
 <!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
 <script>
