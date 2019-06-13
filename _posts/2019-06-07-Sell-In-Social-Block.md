@@ -2,8 +2,8 @@
 layout: post
 comments : true
 title: 社区零售--争夺朝阳大妈
-date: 2019-04-06
-categories: techcode
+date: 2019-06-07
+categories: Bussiness
 tags: [Bussiness-Insight, Society]
 description: 商业视角
 ---

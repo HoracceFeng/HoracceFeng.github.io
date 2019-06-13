@@ -2,8 +2,8 @@
 layout: post
 comments : true
 title: 自动驾驶也可能是地狱
-date: 2019-04-06
-categories: techcode
+date: 2019-06-13
+categories: Bussines
 tags: [Bussiness-Insight]
 description: 商业视角
 ---
