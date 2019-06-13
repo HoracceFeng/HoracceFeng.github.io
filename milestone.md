@@ -7,7 +7,7 @@ header-img: "img/plates.jpg"
 
 ## 技术原创
 
-- [文本检测器论文入门导读](http://www.horaccefeng.com/techcode/2019/06/04/Scene-Text-Detector-Overview/>)
+- [文本检测器论文入门导读](http://www.horaccefeng.com/techcode/2019/06/04/Scene-Text-Detector-Overview/)
 - [Tensorflow 复现 Backbones 时的一些细节](http://www.horaccefeng.com/techcode/2019/04/06/tensorflow-backbones-details/)
 
 
